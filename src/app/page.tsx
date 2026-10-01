@@ -192,9 +192,9 @@ export default function Home() {
                   onInit={(typewriter) => {
                     typewriter
                       .pauseFor(1200)
-                      .typeString('Hey there! I\'m <span class="text-sky-400 whitespace-nowrap drop-shadow-md">Kailashwar Saravanan</span>,<br/>')
+                      .typeString('Hey there! I\'m <span class="text-sky-400 drop-shadow-md">Kailashwar Saravanan</span>,<br/>')
                       .pauseFor(300)
-                      .typeString('<span class="whitespace-nowrap">thanks for stopping by.</span>')
+                      .typeString('<span >thanks for stopping by.</span>')
                       .start();
                   }}
                 />
