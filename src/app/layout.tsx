@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     description: "Full Stack Developer portfolio showcasing projects and skills.",
     type: "website",
   },
+  verification: {
+    google: "8ArBPxobJec9f8y1wLbNXd2BPQT60rpp_cEK8YMrYKc",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
