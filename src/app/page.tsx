@@ -56,6 +56,11 @@ export default function Home() {
   const [mounted, setMounted] = useState(false);
   const { scrollY } = useScroll();
   const [isNavVisible, setIsNavVisible] = useState(true);
+  const [expandedProjects, setExpandedProjects] = useState<Record<string, boolean>>({});
+
+  const toggleProject = (id: string) => {
+    setExpandedProjects(prev => ({...prev, [id]: !prev[id]}));
+  };
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 100) {
@@ -462,9 +467,28 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">Income & Expense Tracker</h3>
-                  <p className="text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-2">
-                    A fully automated, macro-enabled Excel dashboard that tracks complex project financials with real-time dynamic UI updates and interactive data visualizations.
-                  </p>
+                  <button 
+                    onClick={(e) => { e.preventDefault(); toggleProject('p1'); }}
+                    className="text-sm text-sky-600 dark:text-sky-400 font-medium mb-3 hover:underline flex items-center gap-1"
+                  >
+                    {expandedProjects['p1'] ? 'Hide Details' : 'About this project'}
+                    <svg className={`w-4 h-4 transition-transform ${expandedProjects['p1'] ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                  </button>
+                  <AnimatePresence>
+                    {expandedProjects['p1'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <p className="text-neutral-600 dark:text-neutral-400 mb-4">
+                          A fully automated, macro-enabled Excel dashboard that tracks complex project financials with real-time dynamic UI updates and interactive data visualizations.
+                        </p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                   <div className="flex flex-wrap gap-2 mb-6">
                     <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Excel VBA</span>
                     <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Pivot Tables</span>
@@ -491,9 +515,28 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">Task Management Dashboard</h3>
-                  <p className="text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-2">
-                    A productivity tool I made to help teams collaborate. It updates in real-time, so nobody ever misses a beat.
-                  </p>
+                  <button 
+                    onClick={(e) => { e.preventDefault(); toggleProject('p2'); }}
+                    className="text-sm text-sky-600 dark:text-sky-400 font-medium mb-3 hover:underline flex items-center gap-1"
+                  >
+                    {expandedProjects['p2'] ? 'Hide Details' : 'About this project'}
+                    <svg className={`w-4 h-4 transition-transform ${expandedProjects['p2'] ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                  </button>
+                  <AnimatePresence>
+                    {expandedProjects['p2'] && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <p className="text-neutral-600 dark:text-neutral-400 mb-4">
+                          A productivity tool I made to help teams collaborate. It updates in real-time, so nobody ever misses a beat.
+                        </p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                   <div className="flex flex-wrap gap-2 mb-6">
                     <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">React</span>
                     <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Node.js</span>
