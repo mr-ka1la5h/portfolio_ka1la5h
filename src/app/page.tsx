@@ -465,9 +465,7 @@ export default function Home() {
                     <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Tailwind</span>
                     <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Stripe</span>
                   </div>
-                  <Link href="#" className="text-sm font-medium text-neutral-900 dark:text-white hover:underline underline-offset-4">
-                    Check it out &rarr;
-                  </Link>
+
                 </div>
               </motion.div>
 
@@ -496,9 +494,7 @@ export default function Home() {
                     <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Node.js</span>
                     <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Socket.io</span>
                   </div>
-                  <Link href="#" className="text-sm font-medium text-neutral-900 dark:text-white hover:underline underline-offset-4">
-                    Check it out &rarr;
-                  </Link>
+
                 </div>
               </motion.div>
             </div>
