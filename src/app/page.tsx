@@ -438,6 +438,7 @@ export default function Home() {
             variants={staggerContainer}
           >
             
+            <motion.h2 variants={fadeUp} className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-12 text-center md:text-left">What I've been Building Lately</motion.h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Project 1 */}
               <motion.div 
