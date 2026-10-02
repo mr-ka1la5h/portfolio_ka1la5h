@@ -194,7 +194,7 @@ export default function Home() {
                       .pauseFor(1200)
                       .typeString('Hey there! I\'m <span class="text-sky-400 drop-shadow-md">Kailashwar Saravanan</span>,<br/>')
                       .pauseFor(300)
-                      .typeString('<span >thanks for stopping by.</span>')
+                      .typeString('<span >thanks for stopping by...</span>')
                       .start();
                   }}
                 />
