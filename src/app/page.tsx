@@ -437,7 +437,7 @@ export default function Home() {
             viewport={{ once: false, amount: 0.2 }}
             variants={staggerContainer}
           >
-            <motion.h2 variants={fadeUp} className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-12 text-center md:text-left">What I've been Building Lately</motion.h2>
+            
             <div className="grid md:grid-cols-2 gap-8">
               {/* Project 1 */}
               <motion.div 
@@ -455,7 +455,7 @@ export default function Home() {
                    </motion.div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-neutral-700 dark:text-neutral-300 transition-colors">E-Commerce Platform</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">E-Commerce Platform</h3>
                   <p className="text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-2">
                     I built this full-stack store from scratch. It handles everything from browsing products to secure checkout, keeping the experience incredibly smooth.
                   </p>
@@ -486,7 +486,7 @@ export default function Home() {
                    </motion.div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-neutral-700 dark:text-neutral-300 transition-colors">Task Management Dashboard</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">Task Management Dashboard</h3>
                   <p className="text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-2">
                     A productivity tool I made to help teams collaborate. It updates in real-time, so nobody ever misses a beat.
                   </p>
