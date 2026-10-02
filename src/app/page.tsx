@@ -183,7 +183,7 @@ export default function Home() {
             className="grid lg:grid-cols-2 gap-12 items-center w-full"
           >
             <div className="flex flex-col gap-6 order-2 lg:order-1 text-center lg:text-left">
-              <motion.div variants={fadeUp} className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-neutral-900 dark:text-white h-[200px] md:h-[220px] lg:h-[200px]">
+              <motion.div variants={fadeUp} className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-neutral-900 dark:text-white min-h-[180px] md:min-h-[200px] lg:min-h-[220px]">
                 <Typewriter
                   options={{
                     delay: 40,
