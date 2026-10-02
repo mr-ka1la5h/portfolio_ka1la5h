@@ -714,6 +714,24 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/ka1la5h" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-800 dark:hover:text-emerald-100 transition-colors">LinkedIn</a>
         </div>
       </footer>
+
+      {/* Scroll to Top Button */}
+      <AnimatePresence>
+        {!isNavVisible && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-sky-500 text-white dark:bg-sky-400 dark:text-black shadow-[0_0_15px_rgba(56,189,248,0.4)] hover:bg-sky-600 dark:hover:bg-sky-300 transition-colors"
+            aria-label="Scroll to top"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </motion.button>
+        )}
+      </AnimatePresence>
       </div>
     </div>
   );
