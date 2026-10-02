@@ -450,20 +450,25 @@ export default function Home() {
                    <motion.div 
                      whileHover={{ scale: 1.05 }}
                      transition={{ duration: 0.4 }}
-                     className="absolute inset-0 flex items-center justify-center text-neutral-600 font-medium"
+                     className="absolute inset-0 w-full h-full"
                    >
-                     [Screenshot of Project 1]
+                     <Image 
+                       src="/Income & Expense Tracker.jpeg" 
+                       alt="Income and Expense Tracker" 
+                       fill 
+                       className="object-cover object-top"
+                     />
                    </motion.div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">E-Commerce Platform</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">Income & Expense Tracker</h3>
                   <p className="text-neutral-600 dark:text-neutral-400 mb-4 line-clamp-2">
-                    I built this full-stack store from scratch. It handles everything from browsing products to secure checkout, keeping the experience incredibly smooth.
+                    A fully automated, macro-enabled Excel dashboard that tracks complex project financials with real-time dynamic UI updates and interactive data visualizations.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Next.js</span>
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Tailwind</span>
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Stripe</span>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Excel VBA</span>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Pivot Tables</span>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Dynamic Arrays</span>
                   </div>
 
                 </div>
