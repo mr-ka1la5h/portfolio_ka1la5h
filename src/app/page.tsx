@@ -498,6 +498,11 @@ export default function Home() {
                 </div>
               </motion.div>
             </div>
+            <motion.div variants={fadeUp} className="mt-12 text-center">
+              <a href="https://github.com/mr-ka1la5h" target="_blank" rel="noopener noreferrer" className="text-neutral-600 dark:text-neutral-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors inline-flex items-center gap-2 text-lg">
+                Visit my GitHub profile to view more of my projects &rarr;
+              </a>
+            </motion.div>
           </motion.div>
         </ScrollSection>
 
