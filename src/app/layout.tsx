@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio | ka1la5h",
+  title: "Kailashwar | Portfolio",
   description: "Full Stack Developer portfolio showcasing projects and skills. Available for work and collaboration.",
   keywords: ["Kailashwar Saravanan", "Portfolio", "Full Stack Developer", "Web Developer", "Software Engineer"],
   authors: [{ name: "Kailashwar Saravanan" }],
   openGraph: {
-    title: "My Portfolio | ka1la5h",
+    title: "Kailashwar | Portfolio",
     description: "Full Stack Developer portfolio showcasing projects and skills.",
     type: "website",
   },
