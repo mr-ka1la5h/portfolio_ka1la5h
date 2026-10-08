@@ -526,15 +526,15 @@ export default function Home() {
                         className="overflow-hidden"
                       >
                         <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">C# & .NET 8 WPF</span>
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">ETW</span>
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">WPF Bootstrapper</span>
+                          Ever wonder where your games hide their save files or graphics settings? Retrace acts like a detective for your PC. It automatically scans your computer to find exactly where your games keep their important data, making it super easy for you to back them up or tweak them!
+                        </p>
+                      </motion.div>
                     )}
                   </AnimatePresence>
                   <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">React</span>
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Node.js</span>
-                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">Socket.io</span>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">C# & .NET 8 WPF</span>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">ETW</span>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">WPF Bootstrapper</span>
                   </div>
 
                 </div>
