@@ -526,7 +526,7 @@ export default function Home() {
                         className="overflow-hidden"
                       >
                         <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-                          Ever wonder where your games hide their save files or graphics settings? Retrace acts like a detective for your PC. It automatically scans your computer to find exactly where your games keep their important data, making it super easy for you to back them up or tweak them!
+                          A fully automated, deep-scanning PC utility that locates hidden game saves and graphics configurations for streamlined data backups and effortless settings management.
                         </p>
                       </motion.div>
                     )}
