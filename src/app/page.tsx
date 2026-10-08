@@ -526,9 +526,9 @@ export default function Home() {
                         className="overflow-hidden"
                       >
                         <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-                          Ever wonder where your games hide their save files or graphics settings? Retrace acts like a detective for your PC. It automatically scans your computer to find exactly where your games keep their important data, making it super easy for you to back them up or tweak them!
-                        </p>
-                      </motion.div>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">C# & .NET 8 WPF</span>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">ETW</span>
+                    <span className="text-xs font-medium text-sky-700 dark:text-sky-300/80">WPF Bootstrapper</span>
                     )}
                   </AnimatePresence>
                   <div className="flex flex-wrap gap-2 mb-6">
