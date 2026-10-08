@@ -505,16 +505,10 @@ export default function Home() {
                 className="group rounded-2xl border border-neutral-900/10 dark:border-white/10 bg-neutral-900/5 dark:bg-white/5 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:bg-white/10 hover:border-sky-400/30 overflow-hidden hover:border-neutral-700 transition-colors"
               >
                 <div className="h-64 bg-white/10 w-full relative overflow-hidden">
-                   <motion.div 
-                     whileHover={{ scale: 1.05 }}
-                     transition={{ duration: 0.4 }}
-                     className="absolute inset-0 flex items-center justify-center text-neutral-600 font-medium"
-                   >
-                     [Screenshot of Project 2]
-                   </motion.div>
+                   <Image src="/retrace.png" alt="Retrace" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">Task Management Dashboard</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white mb-2 group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors">Retrace - Game Save & Config Tracker</h3>
                   <button 
                     onClick={(e) => { e.preventDefault(); toggleProject('p2'); }}
                     className="text-sm text-sky-600 dark:text-sky-400 font-medium mb-3 hover:underline flex items-center gap-1"
@@ -532,7 +526,7 @@ export default function Home() {
                         className="overflow-hidden"
                       >
                         <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-                          A productivity tool I made to help teams collaborate. It updates in real-time, so nobody ever misses a beat.
+                          Ever wonder where your games hide their save files or graphics settings? Retrace acts like a detective for your PC. It automatically scans your computer to find exactly where your games keep their important data, making it super easy for you to back them up or tweak them!
                         </p>
                       </motion.div>
                     )}
